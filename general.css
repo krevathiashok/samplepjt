@@ -1,0 +1,97 @@
+/*****************************************
+/************GENERAL SECELCTOR**************
+**************************************** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*font size=10px
+  10px/16px=0.62.5=62.5%
+  percentage of user's browser's Font size settings
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "poppins ", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background: linear-gradient(180deg, #e5efee 100%, #ffffff 93%);
+  border-radius: 60px;
+  font-family: "poppins", sans-serif;
+  /* width: 1200px; */
+  margin: 0 auto;
+  color: #1d2528;
+}
+
+/* ****************************************
+/************GENERAL REUSABLE COMPONENETS**************
+**************************************** */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+  margin-bottom: 4.8 rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--center-v {
+  align-items: center;
+}
+
+/* ****************************************
+/************Main Button**************
+**************************************** */
+.btn:link,
+.btn:visited {
+  background: #4fc650;
+  border-radius: 30px;
+
+  color: white;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background: #459345;
+  color: white;
+}
+.how-work-btn:link,
+.how-work-btn:visited {
+  text-decoration: none;
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #1d2528;
+  transition: all 0.3s;
+}
+.how-work-btn:hover,
+.how-work-btn:active {
+  color: #4fc650;
+}
+
+/* ****************************************
+/************HELPER CLASS**************
+**************************************** */
+
+.push-left {
+  margin-left: 4rem;
+}
